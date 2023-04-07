@@ -11,6 +11,11 @@
 		6B1945F729DEE6B500696483 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1945F629DEE6B500696483 /* ContentView.swift */; };
 		6B1945F929DEE6B600696483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1945F829DEE6B600696483 /* Assets.xcassets */; };
 		6B1945FD29DEE6B600696483 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1945FC29DEE6B600696483 /* Preview Assets.xcassets */; };
+		6B19460429DEF89000696483 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B19460329DEF89000696483 /* Timer.swift */; };
+		6B19460629DF0A7600696483 /* FanBladeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B19460529DF0A7600696483 /* FanBladeView.swift */; };
+		6B19460829DF0B9800696483 /* Lamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B19460729DF0B9800696483 /* Lamp.swift */; };
+		6B19460A29DF0C6D00696483 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B19460929DF0C6D00696483 /* ModelData.swift */; };
+		6B19460C29DF178800696483 /* LampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B19460B29DF178800696483 /* LampView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		6B1945F829DEE6B600696483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B1945FA29DEE6B600696483 /* HolographicFanSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HolographicFanSwiftUI.entitlements; sourceTree = "<group>"; };
 		6B1945FC29DEE6B600696483 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B19460329DEF89000696483 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		6B19460529DF0A7600696483 /* FanBladeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanBladeView.swift; sourceTree = "<group>"; };
+		6B19460729DF0B9800696483 /* Lamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp.swift; sourceTree = "<group>"; };
+		6B19460929DF0C6D00696483 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		6B19460B29DF178800696483 /* LampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				6B1945F429DEE6B500696483 /* HolographicFanSwiftUIApp.swift */,
-				6B1945F629DEE6B500696483 /* ContentView.swift */,
+				6B63FEC529DFF49600FE7DA1 /* View */,
+				6B63FEC429DFF48F00FE7DA1 /* Model */,
 				6B1945F829DEE6B600696483 /* Assets.xcassets */,
 				6B1945FA29DEE6B600696483 /* HolographicFanSwiftUI.entitlements */,
 				6B1945FB29DEE6B600696483 /* Preview Content */,
@@ -67,6 +78,26 @@
 				6B1945FC29DEE6B600696483 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6B63FEC429DFF48F00FE7DA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B19460729DF0B9800696483 /* Lamp.swift */,
+				6B19460929DF0C6D00696483 /* ModelData.swift */,
+				6B19460329DEF89000696483 /* Timer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B63FEC529DFF49600FE7DA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B1945F629DEE6B500696483 /* ContentView.swift */,
+				6B19460529DF0A7600696483 /* FanBladeView.swift */,
+				6B19460B29DF178800696483 /* LampView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B19460829DF0B9800696483 /* Lamp.swift in Sources */,
+				6B19460429DEF89000696483 /* Timer.swift in Sources */,
+				6B19460C29DF178800696483 /* LampView.swift in Sources */,
 				6B1945F729DEE6B500696483 /* ContentView.swift in Sources */,
 				6B1945F529DEE6B500696483 /* HolographicFanSwiftUIApp.swift in Sources */,
+				6B19460629DF0A7600696483 /* FanBladeView.swift in Sources */,
+				6B19460A29DF0C6D00696483 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,15 +315,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = YvenChen.HolographicFanSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,15 +355,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = YvenChen.HolographicFanSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
